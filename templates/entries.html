@@ -1,0 +1,7 @@
+<!-- This template displays an individual blog post after it has been entered.
+    It contains a link to the blogger's collection of blog posts. -->
+{% extends "base.html" %} {% block content %}
+<h1>{{title}}</h1>
+<p>{{body}}</p>
+<p><a href="./blog?user={{owner.id}}">written by {{owner.username}}</a></p>
+{% endblock %}
